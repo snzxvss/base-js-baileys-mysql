@@ -7,7 +7,8 @@
   "scripts": {
     "lint": "eslint . --no-ignore",
     "dev": "npm run lint && nodemon ./src/app.js",
-    "start": "node ./src/app.js"
+    "start": "node ./src/app.js",
+    "build": "npm run lint && pm2 start src/app.js --name base-bailey-json"
   },
   "keywords": [],
   "dependencies": {
@@ -15,6 +16,7 @@
     "@builderbot/database-mysql": "1.2.2",
     "@builderbot/provider-baileys": "1.2.2",
     "googleapis": "^144.0.0",
+    "pm2": "^5.4.2",
     "sharp": "^0.33.5"
   },
   "devDependencies": {
