@@ -180,10 +180,10 @@ const main = async () => {
     
     const adapterProvider = createProvider(Provider)
     const adapterDB = new Database({
-        host: process.env.MYSQL_DB_HOST,
-        user: process.env.MYSQL_DB_USER,
-        database: process.env.MYSQL_DB_NAME,
-        password: process.env.MYSQL_DB_PASSWORD,
+        host: "localhost",
+        user: "root",
+        database: "builderbot",
+        password: "",
     })
 
     const { handleCtx, httpServer } = await createBot({
