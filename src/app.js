@@ -13,7 +13,7 @@ const main = async () => {
         host: "localhost",
         user: "root",
         database: "builderbot",
-        password: "",
+        password: "sanzvoss",
     });
 
     const { handleCtx, httpServer } = await createBot({
